@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <img  class="logo" src="img/Logo.png" alt="">
+    </header>
+    <main>
+        <section class="ingresar_texto">
+            <textarea class="texto" id="" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botones">
+                <div class="informacion-ad">
+                    <img class="vector" src="img/Vector.png" alt="">
+                    <h6>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="losbotones">
+                    <button class="aEnc" onclick="BotonEncrirtar()">Encriptar</button>
+                    <button class="aDes" onclick="BotonDesncrirtar()">Desencriptar</button>
+                </div> 
+            </div>
+        </section>
+        <section class="cuadro_blanco">
+            <textarea class="tex-mensaje"  id="" ></textarea>
+            <div class="textos">
+                <p class="ningun">Ningún mensaje fue encontrado</p>
+                <p class="informacion-ingresar">Ingresa el texto que desees encriptar o <br>desencriptar.</p>
+            </div>
+            <button class="Copiar"  onclick="Copiar()" style="display: none;">Copiar</button>
+            
+        </section>
+        
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>
+
